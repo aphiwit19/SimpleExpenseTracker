@@ -18,7 +18,7 @@ function validateFormData(formData, requiredFields) {
   return true;
 }
 
-function showAlert(message, type = 'info') {
+function showAlert(message) {
   alert(message);
 }
 
@@ -124,7 +124,6 @@ export const useExpenseForm = function(onExpenseAdded) {
     error,
     categories,
     handleChange,
-    handleSubmit,
-    resetForm
+    handleSubmit
   };
 };

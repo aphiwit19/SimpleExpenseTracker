@@ -10,8 +10,7 @@ function ExpenseForm(props) {
     error,
     categories,
     handleChange,
-    handleSubmit,
-    resetForm
+    handleSubmit
   } = useExpenseForm(onExpenseAdded);
 
   return (

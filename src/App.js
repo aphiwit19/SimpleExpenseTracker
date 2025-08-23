@@ -33,7 +33,7 @@ function App() {
             className={activeTab === "list" ? "nav-btn active" : "nav-btn"}
             onClick={() => setActiveTab("list")}
           >
-            Add Expense
+            Expense List
           </button>
         </nav>
       </header>

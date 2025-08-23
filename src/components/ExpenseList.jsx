@@ -15,7 +15,7 @@ function formatDate(date) {
   return new Date(date).toLocaleDateString('en-GB');
 }
 
-function showAlert(message, type = 'info') {
+function showAlert(message) {
   alert(message);
 }
 
@@ -145,9 +145,9 @@ function ExpenseList(props) {
     if (showConfirmation('Are you sure you want to delete this expense?')) {
       try {
         await ExpenseService.deleteExpense(id);
-        showAlert('Expense deleted successfully!', 'success');
+        showAlert('Expense deleted successfully!');
       } catch (error) {
-        showAlert(error.message, 'error');
+        showAlert(error.message);
       }
     }
   };

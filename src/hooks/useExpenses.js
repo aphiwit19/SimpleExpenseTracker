@@ -31,13 +31,6 @@ export const useExpenses = function (refreshTrigger, sorted) {
         setLoading(false);
       }, refreshTrigger);
 
-      // Error handling สำหรับ Firebase subscription
-      const handleError = function (error) {
-        console.error("Error in useExpenses:", error);
-        setError("ไม่สามารถโหลดข้อมูลรายจ่ายได้");
-        setLoading(false);
-      };
-
       return function () {
         if (unsubscribe) {
           unsubscribe();
