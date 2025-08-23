@@ -1,6 +1,6 @@
 import React from 'react';
 import { useExpenseForm } from '../hooks/useExpenseForm';
-// import './ExpenseForm.css';
+import './ExpenseForm.css';
 
 function ExpenseForm(props) {
   const onExpenseAdded = props.onExpenseAdded;
